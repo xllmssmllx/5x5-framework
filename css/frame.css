@@ -2,25 +2,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         body {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3rem;
-            font-weight: 700;
-            color: black;
-            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: darkgray;
             text-align:center;
             min-width: 290px;
             background: white;
         }
 /* Header */
-        p#site-title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-p#site-title a {
-            display: inline-block;
-            color: darkgray;
-            text-align: center;
-            padding-bottom: 15px;
-            text-decoration: none;
+#site-title a {
+    #site-title a {
+    font-size: 3rem;      /* Large size for 5X5 */
+    font-weight: 700;     /* Bold */
+    color: black;         /* Black text */
+    text-decoration: none;
         }
 /* Nav Bar*/
         nav { 
@@ -57,6 +52,7 @@ p#site-title a {
             font-family: serif;
             font-size: .7rem;
             color: darkgray;
+
 
 
 
