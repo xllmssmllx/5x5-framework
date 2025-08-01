@@ -1,7 +1,7 @@
 /* Body*/
-    @import url(https://fonts.googleapis.com/css?family=Cormorant+SC:400,900);
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         body {
-            font-family: 'Cormorant SC', serif;
+            font-family: 'Montserrat', sans-serif;
             font-size:20px;
             color: darkgray;
             text-align:center;
