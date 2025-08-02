@@ -135,6 +135,13 @@ hr {
   background-image: url(../images/p1-5.jpg);
 }
 
+.img_6 {
+  background-image: url(../images/p1-6.jpg);
+}
+
+.img_7 {
+  background-image: url(../images/p1-7.jpg);
+}
 /* ===== Footer ===== */
 #copyr {
   font-family: serif;
@@ -170,6 +177,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
