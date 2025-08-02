@@ -81,7 +81,7 @@ hr {
   width: 160px;
 }
 
-/* Large spans two columns (160px + 160px + 10px gap = 330px) */
+/* Large spans two columns (160px + 160px + 5px gap = 325px) */
 .large {
   grid-column: span 2;
   width: 330px;
@@ -193,6 +193,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
