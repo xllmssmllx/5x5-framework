@@ -62,7 +62,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
-    max-width: calc(2 * 160px + 10px); /* 2 squares + 1 gap */
+    max-width: calc(2 * 160px + 5px); /* 2 squares + 1 gap */
     margin: 0 auto; /* center grid horizontally */
 }
 
@@ -193,6 +193,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
