@@ -60,41 +60,54 @@ hr {
 #project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
     padding: 10px;
-    max-width: 900px; /* max container width */
-    margin: 0 auto; /* center container */
+    max-width: calc(2 * 160px + 10px); /* 2 squares + 1 gap */
+    margin: 0 auto; /* center grid horizontally */
 }
 
+
 .large, .small {
-  aspect-ratio: 1 / 1; /* force square shape */
+  aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-width: 160px;
+  min-height: 160px; /* ensures minimum text fit */
 }
 
-/* small tiles: flexible up to 150px, then fixed */
+/* Small squares take equal width */
 .small {
-  width: min(90vw, 150px);
-  height: auto; /* height follows aspect-ratio */
+  width: 160px;
 }
 
-/* large tiles span two columns and squares, max width 310px */
+/* Large spans two columns (160px + 160px + 10px gap = 330px) */
 .large {
   grid-column: span 2;
-  width: min(90vw, 310px);
-  height: auto;
+  width: 330px;
 }
 
-/* Responsive tweak: on narrow screens stack in one column */
-@media (max-width: 600px) {
+/* Optional: If you want hover effect or content inside squares */
+.square {
+  display: block;
+  background-color: #e0e0e0;
+}
+
+.square:hover {
+  opacity: 0.85;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive fallback: stack vertically */
+@media (max-width: 340px) {
   #project-grid {
     grid-template-columns: 1fr;
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   .large, .small {
-    width: 90vw; /* full width */
+    width: 90vw;
     height: auto;
   }
 
@@ -180,6 +193,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
