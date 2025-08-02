@@ -59,11 +59,11 @@ hr {
 /* Grid container for tiles */
 #project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 160px); /* two fixed columns */
     gap: 10px;
     padding: 10px;
-    max-width: calc(2 * 160px + 5px); /* 2 squares + 1 gap */
-    margin: 0 auto; /* center grid horizontally */
+    max-width: 340px; /* 2 * 160px + 10px gap */
+    margin: 0 auto; /* center grid */
 }
 
 
@@ -78,13 +78,14 @@ hr {
 
 /* Small squares take equal width */
 .small {
-  width: 160px;
+    width: 160px;
+    height: 160px;  /* Add height for square */
 }
 
-/* Large spans two columns (60px + 60px + 5px gap = 125px) */
 .large {
-  grid-column: span 2;
-  width: 125px;
+    grid-column: span 2;
+    width: 330px;   /* 160 + 160 + 10 gap */
+    height: 330px;  /* Match width for square */
 }
 
 /* Optional: If you want hover effect or content inside squares */
@@ -152,20 +153,19 @@ hr {
 }
 
 .text_box1, .text_box2 {
-  font-family: 'Montserrat', sans-serif; /* match body font */
-  font-size: 14px; /* smaller than default body font */
-  line-height: 1.4; /* readable line spacing */
-  width: 30em;      /* ~30 characters wide */
-  padding: 1em;     /* border around text */
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-width: 200px; /* fallback for small screens */
-  aspect-ratio: 1 / 1; /* keep it square */
-  box-sizing: border-box; 
-  margin: 0 auto; /* center within parent/grid */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 330px; /* same as .large */
+    height: 330px;
+    padding: 10px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 /* Footer */
 #copyr {
@@ -200,6 +200,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
