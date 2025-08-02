@@ -46,11 +46,29 @@
         hr { 
             color: darkgray
         }
+/* Grid container for tiles */
+    #tile-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);  /* 5 columns */
+        grid-template-rows: repeat(5, 1fr);     /* 5 rows */
+        gap: 1.5%;  /* space between tiles */
+        width: 100%;
+        max-width: 1200px;  /* optional: control max width */
+        margin: 0 auto;     /* center grid horizontally */
+        }
+.square {
+        aspect-ratio: 1 / 1; /* modern 1:1 square */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #f0f0f0; /* fallback color */
+        }
 /* footer*/
         #copyr {
             font-family: serif;
             font-size: .7rem;
             color: darkgray;
+
 
 
 
