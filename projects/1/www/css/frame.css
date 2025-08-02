@@ -1,63 +1,72 @@
-/* Body*/
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-        body {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            color: darkgray;
-            text-align:center;
-            min-width: 290px;
-            background: white;
-        }
+/* Body */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: darkgray;
+    text-align: center;
+    min-width: 290px;
+    background: white;
+}
+
 /* Header */
-     #site-title a {
-        font-size: 8rem;      /* Large size for 5X5 */
-        font-weight: 700;     /* Bold */
-        color: black;         /* Black text */
-        text-decoration: none;
-        }
-/* Nav Bar*/
-        nav { 
-            margin-top: -25px;
-            font-size: 1.1rem;
-        }
-       ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            padding-bottom: 10px;
-            overflow: hidden;
-        }
-        li {
-            display: inline
-        }
-        li a {
-            display: inline-block;
-            color: darkgray;
-            text-align: center;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        #navl {
-            padding-right: 36px;
-        }
-        #navr {
-            padding-left: 36px
-        }
-        hr { 
-            color: darkgray
-        }
+#site-title a {
+    font-size: 8rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+/* Nav Bar */
+nav {
+    margin-top: -25px;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 10px 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    color: darkgray;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#navl {
+    padding-right: 36px;
+}
+
+#navr {
+    padding-left: 36px;
+}
+
+hr {
+    color: darkgray;
+}
+
 /* Grid container for tiles */
- #project-grid {
+#project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for small, full-width for large */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     padding: 10px;
 }
 
 .large {
-    grid-column: span 2; /* large spans full width */
-    height: 300px; /* or auto, or % */
+    grid-column: span 2;
+    height: 300px;
     background-size: cover;
     background-position: center;
 }
@@ -67,19 +76,22 @@
     background-size: cover;
     background-position: center;
 }
+
 .square {
-        aspect-ratio: 1 / 1; /* modern 1:1 square */
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: #e0e0e0; /* fallback color */
-        }
+    aspect-ratio: 1 / 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e0e0e0;
+}
+
 .square:hover {
-        opacity: 0.85;
-        cursor: pointer;
-        transition: opacity 0.3s ease;
-        }
-/* Links to background images */
+    opacity: 0.85;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Background image classes */
 .img_top {
     background-image: url(../projects/1/www/images/p1-1.jpg);
 }
@@ -99,8 +111,9 @@
 .img_5 {
     background-image: url(../projects/1/www/images/p1-5.jpg);
 }
+
 .text_box1, .text_box2 {
-    background: #f0f0f0; /* or use background images if needed */
+    background: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,32 +121,38 @@
     padding: 10px;
 }
 
-/* footer*/
-        #copyr {
-            font-family: serif;
-            font-size: .7rem;
-            color: darkgray;
-         }
+/* Footer */
+#copyr {
+    font-family: serif;
+    font-size: 0.7rem;
+    color: darkgray;
+}
+
 /* Responsive grid for smaller screens */
 @media (max-width: 600px) {
     #project-grid {
-        grid-template-columns: 1fr; /* stack all elements vertically */
+        grid-template-columns: 1fr;
     }
 
- .large {
-    height: 40vw; /* example for responsive height */
-}
+    .large {
+        height: min(40vw, 300px);
+    }
 
-.small {
-    height: 20vw;
-}
+    .small {
+        height: min(20vw, 150px);
+    }
 
     #site-title a {
-        font-size: 4rem;  /* reduce title size on small screens */
+        font-size: 4rem;
     }
 
     nav {
-        font-size: 1rem;  /* slightly smaller nav font */
+        font-size: 1rem;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 }
+
 
