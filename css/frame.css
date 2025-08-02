@@ -61,7 +61,12 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        background-color: #f0f0f0; /* fallback color */
+        background-color: #e0e0e0; /* fallback color */
+        }
+.square:hover {
+        opacity: 0.85;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
         }
 /* Links to background images */
 .img_1-1 { background-image: url(images/1-1.jpg); }
@@ -98,6 +103,7 @@
             font-family: serif;
             font-size: .7rem;
             color: darkgray;
+         }
 
 
 
