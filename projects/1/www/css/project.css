@@ -153,7 +153,7 @@ hr {
 
 .text_box1, .text_box2 {
   font-family: 'Montserrat', sans-serif; /* match body font */
-  font-size: 0.9rem; /* smaller than default body font */
+  font-size: 14px; /* smaller than default body font */
   line-height: 1.4; /* readable line spacing */
   width: 30em;      /* ~30 characters wide */
   padding: 1em;     /* border around text */
@@ -200,6 +200,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
