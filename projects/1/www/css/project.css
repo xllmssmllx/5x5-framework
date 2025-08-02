@@ -92,7 +92,7 @@ hr {
 }
 
 /* Background image classes */
-.img_top {
+.img_1 {
     background-image: url(../projects/1/www/images/p1-1.jpg);
 }
 
@@ -154,5 +154,6 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
