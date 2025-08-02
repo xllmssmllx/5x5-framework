@@ -152,14 +152,19 @@ hr {
 }
 
 .text_box1, .text_box2 {
-    background: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
+  font-size: 1em; /* or adjust as needed */
+  width: 60em;    /* approx 60 characters */
+  padding: 1em;   /* border around text */
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 160px; /* safety minimum for very small screens */
+  aspect-ratio: 1 / 1; /* optional: makes it square */
+  box-sizing: border-box; /* include padding in total size */
+  margin: 0 auto; /* center it horizontally if allowed */
 }
-
 /* Footer */
 #copyr {
     font-family: serif;
@@ -193,6 +198,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
