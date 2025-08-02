@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>5x5 | Platform</title>
+    <link rel="stylesheet" type="text/css" href="css/frame.css">
+    <link rel="icon" href="images/5x5-ico.png">
+    <meta charset=utf-8 />
+    <meta name="description" content="Architectural investigations"> 
+    <meta name="author" content="5x5 Platform">
+    <meta name="copyright" content="Copyright (c) 2025 5x5 Platfom. All Rights Reserved">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+/* Float */
+        .square {
+            float: left;
+            position: relative;
+            width: 30%;
+            padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+            margin:1.66%;
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size: contain;
+            }
+/*  Links to background images */
+            .img_1-1{background-image:url(images/1-1.jpg);}
+            .img_1-2{background-image:url(images/1-2.jpg);}
+            .img_1-3{background-image:url(images/1-3.jpg);}
+
+            .img_2-1{background-image:url(images/2-1.jpg);}
+            .img_2-2{background-image:url(images/2-2.jpg);}
+            .img_2-3{background-image:url(images/2-3.jpg);}
+
+            .img_3-1{background-image:url(images/3-1.jpg);}
+            .img_3-2{background-image:url(images/3-2.jpg);}
+            .img_3-3{background-image:url(images/3-3.jpg);}
+
+            .img_4-1{background-image:url(images/4-1.jpg);}
+            .img_4-2{background-image:url(images/4-2.jpg);}
+            .img_4-3{background-image:url(images/4-3.jpg);}
+
+            .img_5-1{background-image:url(images/5-1.jpg);}
+            .img_5-2{background-image:url(images/5-2.jpg);}
+            .img_5-3{background-image:url(images/5-3.jpg);}
+
+            .img_6-1{background-image:url(images/6-1.jpg);}
+            .img_6-2{background-image:url(images/6-2.jpg);}
+            .img_6-3{background-image:url(images/6-3.jpg);}
+
+            .img_7-1{background-image:url(images/7-1.jpg);}
+            .img_7-2{background-image:url(images/7-2.png);}
+            .img_7-3{background-image:url(images/7-3.png);}
+
+            .img_8-1{background-image:url(images/8-1.jpg);}
+            .img_8-2{background-image:url(images/8-2.jpg);}
+            .img_8-3{background-image:url(images/8-3.jpg);}
+ 
+            .img_9-1{background-image:url(images/9-1.png);}
+            .img_9-2{background-image:url(images/9-2.jpg);}
+            .img_9-3{background-image:url(images/9-3.jpg);}  
+        
+            .img_10-1{background-image:url(images/10-1.jpg);}
+            .img_10-2{background-image:url(images/10-2.png);}
+            .img_10-3{background-image:url(images/10-3.png);}  
+    </style>
+</head>
+
+<body>
+    <p id="site-title"><a href="index.html">5X5</a></p>
+    <nav>
+         <ul>
+            <li id="navl"><a href="about/about.html">About</a></li>
+            <li id="navr"><a href="contact/contacts.html">Contact</a></li>
+        </ul> 
+        <hr>
+    </nav>
+    
+<!-- 1st row -->
+    <div><a href="projects/1/www/index.html" class="square img_1-1" aria-label="Project 1 Image 1"></a>
+    </div>
+    <div><a href="projects/1/www/index.html" class="square img_1-2" aria-label="Project 1 Image 2"></a>
+    </div>
+    <div><a href="projects/1/www/index.html" class="square img_1-3" aria-label="Project 1 Image 3"></a>
+    </div>
+
+<!-- 2nd row -->
+    <div><a href="projects/2/www/index.html" class="square img_2-1" aria-label="Project 2 Image 1"></a>
+    </div>
+    <div><a href="projects/2/www/index.html" class="square img_2-2" aria-label="Project 2 Image 2"></a>
+    </div>
+    <div><a href="projects/2/www/index.html" class="square img_2-3" aria-label="Project 2 Image 3"></a>
+    </div>
+
+<!-- 3rd row -->
+    <div><a href="projects/3/www/index.html" class="square img_3-1" aria-label="Project 3 Image 1"></a>
+    </div>
+    <div><a href="projects/3/www/index.html" class="square img_3-2" aria-label="Project 3 Image 2"></a>
+    </div>
+    <div><a href="projects/3/www/index.html" class="square img_3-3" aria-label="Project 3 Image 3"></a>
+    </div>
+
+<!-- 4th row -->
+    <div><a href="projects/4/www/index.html" class="square img_4-1" aria-label="Project 4 Image 1"></a>
+    </div>
+    <div><a href="projects/4/www/index.html" class="square img_4-2" aria-label="Project 4 Image 2"></a>
+    </div>
+    <div><a href="projects/4/www/index.html" class="square img_4-3" aria-label="Project 4 Image 3"></a>
+    </div>
+
+<!-- 5th row -->
+    <div><a href="projects/5/www/index.html" class="square img_5-1" aria-label="Project 5 Image 1"></a>
+    </div>
+    <div><a href="projects/5/www/index.html" class="square img_5-2" aria-label="Project 5 Image 2"></a>
+    </div>
+    <div><a href="projects/5/www/index.html" class="square img_5-3" aria-label="Project 5 Image 3"></a>
+    </div>
+    
+<!-- 6th row -->
+    <div><a href="projects/6/www/index.html" class="square img_6-1" aria-label="Project 6 Image 1"></a>
+    </div>
+    <div><a href="projects/6/www/index.html" class="square img_6-2" aria-label="Project 6 Image 2"></a>
+    </div>
+    <div><a href="projects/6/www/index.html" class="square img_6-3" aria-label="Project 6 Image 3"></a>
+    </div>
+
+<!-- Footer -->
+    <footer id="footer">
+        <p><span id="copyr">&copy;2025 5x5</span>
+        </p> 
+    </footer>
+</body>
+</html>
+
+
