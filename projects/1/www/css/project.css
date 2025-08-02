@@ -81,10 +81,10 @@ hr {
   width: 160px;
 }
 
-/* Large spans two columns (160px + 160px + 5px gap = 325px) */
+/* Large spans two columns (60px + 60px + 5px gap = 125px) */
 .large {
   grid-column: span 2;
-  width: 330px;
+  width: 125px;
 }
 
 /* Optional: If you want hover effect or content inside squares */
@@ -100,7 +100,7 @@ hr {
 }
 
 /* Responsive fallback: stack vertically */
-@media (max-width: 340px) {
+@media (max-width: 125px) {
   #project-grid {
     grid-template-columns: 1fr;
     max-width: 100%;
@@ -200,6 +200,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
