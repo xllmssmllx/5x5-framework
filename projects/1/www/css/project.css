@@ -152,18 +152,20 @@ hr {
 }
 
 .text_box1, .text_box2 {
-  font-size: 1em; /* or adjust as needed */
-  width: 60em;    /* approx 60 characters */
-  padding: 1em;   /* border around text */
+  font-family: 'Montserrat', sans-serif; /* match body font */
+  font-size: 0.9rem; /* smaller than default body font */
+  line-height: 1.4; /* readable line spacing */
+  width: 60em;      /* ~60 characters wide */
+  padding: 1em;     /* border around text */
   background: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-width: 160px; /* safety minimum for very small screens */
-  aspect-ratio: 1 / 1; /* optional: makes it square */
-  box-sizing: border-box; /* include padding in total size */
-  margin: 0 auto; /* center it horizontally if allowed */
+  min-width: 200px; /* fallback for small screens */
+  aspect-ratio: 1 / 1; /* keep it square */
+  box-sizing: border-box; 
+  margin: 0 auto; /* center within parent/grid */
 }
 /* Footer */
 #copyr {
@@ -198,6 +200,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
