@@ -1,97 +1,111 @@
-/* Body */
+/* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* ===== CSS Variables ===== */
+:root {
+  --tile-size: 370px;  /* ~97mm on standard screens */
+  --tile-gap: 10px;
+  --grid-width: calc(2 * var(--tile-size) + var(--tile-gap));
+}
+
+/* ===== Body ===== */
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: darkgray;
-    text-align: center;
-    min-width: 290px;
-    background: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: darkgray;
+  text-align: center;
+  min-width: 290px;
+  background: white;
 }
 
-/* Header */
+/* ===== Header ===== */
 #site-title a {
-    font-size: 8rem;
-    font-weight: 700;
-    color: black;
-    text-decoration: none;
+  font-size: 8rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
 }
 
-/* Nav Bar */
+/* ===== Nav Bar ===== */
 nav {
-    margin-top: -25px;
-    font-size: 1.1rem;
+  margin-top: -25px;
+  font-size: 1.1rem;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0 10px 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 10px 0;
+  overflow: hidden;
 }
 
 li {
-    display: inline;
+  display: inline;
 }
 
 li a {
-    display: inline-block;
-    color: darkgray;
-    text-align: center;
-    text-decoration: none;
-    padding: 0 10px;
+  display: inline-block;
+  color: darkgray;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
 #navl {
-    padding-right: 36px;
+  padding-right: 36px;
 }
 
 #navr {
-    padding-left: 36px;
+  padding-left: 36px;
 }
 
 hr {
-    color: darkgray;
+  color: darkgray;
 }
 
-/* Grid container for tiles */
+/* ===== Grid Container ===== */
 #project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 160px); /* two fixed columns */
-    gap: 10px;
-    padding: 10px;
-    max-width: 340px; /* 2 * 160px + 10px gap */
-    margin: 0 auto; /* center grid */
+  display: grid;
+  grid-template-columns: repeat(2, var(--tile-size));
+  gap: var(--tile-gap);
+  max-width: var(--grid-width);
+  margin: 0 auto; /* center the grid */
+  justify-content: center; /* center content */
 }
 
-
-.large, .small {
-  aspect-ratio: 1 / 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-width: 160px;
-  min-height: 160px; /* ensures minimum text fit */
-}
-
-/* Small squares take equal width */
-.small {
-    width: 160px;
-    height: 160px;  /* Add height for square */
-}
-
-.large {
-    grid-column: span 2;
-    width: 330px;   /* 160 + 160 + 10 gap */
-    height: 330px;  /* Match width for square */
-}
-
-/* Optional: If you want hover effect or content inside squares */
-.square {
-  display: block;
+/* ===== Grid Items (Text + Image Squares) ===== */
+.small, .large, .text_box1, .text_box2 {
+  width: var(--tile-size);
+  height: var(--tile-size);
   background-color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+/* Large spans two columns */
+.large {
+  grid-column: span 2;
+}
+
+/* Text Box Styling */
+.text_box1, .text_box2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0 auto;
+}
+
+/* Image Squares (background image) */
+.square {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .square:hover {
@@ -100,106 +114,63 @@ hr {
   transition: opacity 0.3s ease;
 }
 
-/* Responsive fallback: stack vertically */
-@media (max-width: 125px) {
+/* Background image classes */
+.img_1 {
+  background-image: url(../images/p1-1.jpg);
+}
+
+.img_2 {
+  background-image: url(../images/p1-2.jpg);
+}
+
+.img_3 {
+  background-image: url(../images/p1-3.jpg);
+}
+
+.img_4 {
+  background-image: url(../images/p1-4.jpg);
+}
+
+.img_5 {
+  background-image: url(../images/p1-5.jpg);
+}
+
+/* ===== Footer ===== */
+#copyr {
+  font-family: serif;
+  font-size: 0.7rem;
+  color: darkgray;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 800px) {
   #project-grid {
     grid-template-columns: 1fr;
     max-width: 100%;
   }
 
-  .large, .small {
+  .small, .large, .text_box1, .text_box2 {
     width: 90vw;
-    height: auto;
+    height: 90vw;
   }
 
   .large {
     grid-column: span 1;
   }
+
+  #site-title a {
+    font-size: 4rem;
+  }
+
+  nav {
+    font-size: 1rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-.square {
-    aspect-ratio: 1 / 1;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #e0e0e0;
-}
-
-.square:hover {
-    opacity: 0.85;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-/* Background image classes */
-.img_1 {
-    background-image: url(../images/p1-1.jpg);
-}
-
-.img_2 {
-    background-image: url(../images/p1-2.jpg);
-}
-
-.img_3 {
-    background-image: url(../images/p1-3.jpg);
-}
-
-.img_4 {
-    background-image: url(../images/p1-4.jpg);
-}
-
-.img_5 {
-    background-image: url(../images/p1-5.jpg);
-}
-
-.text_box1, .text_box2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
-    width: 330px; /* same as .large */
-    height: 330px;
-    padding: 10px;
-    background: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-/* Footer */
-#copyr {
-    font-family: serif;
-    font-size: 0.7rem;
-    color: darkgray;
-}
-
-/* Responsive grid for smaller screens */
-@media (max-width: 600px) {
-    #project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .large {
-        height: min(40vw, 300px);
-    }
-
-    .small {
-        height: min(20vw, 150px);
-    }
-
-    #site-title a {
-        font-size: 4rem;
-    }
-
-    nav {
-        font-size: 1rem;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-}
 
 
 
