@@ -1,20 +1,20 @@
 /* Body*/
-    @import url(http://fonts.googleapis.com/css?family=Cormorant+SC:400,900);
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         body {
-            font-family: 'Cormorant SC', serif;
-            font-size:20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
             color: darkgray;
             text-align:center;
             min-width: 290px;
             background: white;
         }
 /* Header */
-        p a {
-            display: inline-block;
-            color: darkgray;
-            text-align: center;
-            padding-bottom: 15px;
-            text-decoration: none;
+     #site-title a {
+        font-size: 8rem;      /* Large size for 5X5 */
+        font-weight: 700;     /* Bold */
+        color: black;         /* Black text */
+        text-decoration: none;
         }
 /* Nav Bar*/
         nav { 
@@ -36,6 +36,7 @@
             color: darkgray;
             text-align: center;
             text-decoration: none;
+            padding: 0 10px;
         }
         #navl {
             padding-right: 36px;
@@ -46,8 +47,86 @@
         hr { 
             color: darkgray
         }
+/* Grid container for tiles */
+ #project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small, full-width for large */
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.large {
+    grid-column: span 2; /* large spans full width */
+    height: 300px; /* or auto, or % */
+    background-size: cover;
+    background-position: center;
+}
+
+.small {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.square {
+        aspect-ratio: 1 / 1; /* modern 1:1 square */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #e0e0e0; /* fallback color */
+        }
+.square:hover {
+        opacity: 0.85;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        }
+/* Links to background images */
+.img_top {
+    background-image: url(../projects/1/www/images/P1-1.jpg);
+}
+
+.img_1 {
+    background-image: url(../projects/1/www/images/P1-2.jpg);
+}
+
+.img_2 {
+    background-image: url(../projects/1/www/images//P1-3.jpg);
+}
+
+.img_middle {
+    background-image: url(../projects/1/www/images/P1-4.jpg);
+}
+
+.img_bottom {
+    background-image: url(../projects/1/www/images/P1-5.jpg);
+}
+.text_box1, .text_box2 {
+    background: #f0f0f0; /* or use background images if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
 /* footer*/
         #copyr {
             font-family: serif;
             font-size: .7rem;
             color: darkgray;
+         }
+/* Responsive grid for smaller screens */
+@media (max-width: 600px) {
+    #tile-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 3%;  /* slightly larger gap on small screens */
+    }
+
+    #site-title a {
+        font-size: 4rem;  /* reduce title size on small screens */
+    }
+
+    nav {
+        font-size: 1rem;  /* slightly smaller nav font */
+    }
+}
