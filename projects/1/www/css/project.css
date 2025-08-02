@@ -155,7 +155,7 @@ hr {
   font-family: 'Montserrat', sans-serif; /* match body font */
   font-size: 0.9rem; /* smaller than default body font */
   line-height: 1.4; /* readable line spacing */
-  width: 60em;      /* ~60 characters wide */
+  width: 30em;      /* ~30 characters wide */
   padding: 1em;     /* border around text */
   background: #f0f0f0;
   display: flex;
@@ -200,6 +200,7 @@ hr {
         scroll-behavior: smooth;
     }
 }
+
 
 
 
