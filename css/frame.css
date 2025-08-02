@@ -36,6 +36,7 @@
             color: darkgray;
             text-align: center;
             text-decoration: none;
+            padding: 0 10px;
         }
         #navl {
             padding-right: 36px;
@@ -104,6 +105,22 @@
             font-size: .7rem;
             color: darkgray;
          }
+/* Responsive grid for smaller screens */
+@media (max-width: 600px) {
+    #tile-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 3%;  /* slightly larger gap on small screens */
+    }
+
+    #site-title a {
+        font-size: 4rem;  /* reduce title size on small screens */
+    }
+
+    nav {
+        font-size: 1rem;  /* slightly smaller nav font */
+    }
+}
 
 
 
