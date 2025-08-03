@@ -86,7 +86,7 @@ hr {
 .large {
   grid-column: span 2;
   width: calc(2 * var(--tile-size) + var(--tile-gap));
-  height: var(--tile-size);
+  height: calc(2 * var(--tile-size) + var(--tile-gap));
   background-color: #e0e0e0;
 }
 
@@ -180,6 +180,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
