@@ -90,7 +90,7 @@ hr {
   background-color: #e0e0e0;
 }
 
-/* Large spans two columns */
+/* Small spans one columns */
 .small {
   /* Small image squares */
     background-size: cover;
@@ -188,4 +188,5 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
