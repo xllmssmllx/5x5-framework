@@ -66,43 +66,45 @@ hr {
 
 /* ===== Grid Container ===== */
 #project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, var(--tile-size));
-  gap: var(--tile-gap);
-  max-width: var(--grid-width);
-  margin: 0 auto; /* center the grid */
-  justify-content: center; /* center content */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* ===== Grid Items (Text + Image Squares) ===== */
-.small, .large, .text_box1, .text_box2, .text_box3, .text_box4 {
-  width: var(--tile-size);
-  height: var(--tile-size);
-  background-color: #e0e0e0;
-  box-sizing: border-box;
-}
-
-/* Large spans two columns */
 .large {
-  grid-column: span 2;
-  width: calc(2 * var(--tile-size) + var(--tile-gap));
-  height: calc(2 * var(--tile-size) + var(--tile-gap));
-  background-color: #e0e0e0;
+    grid-column: span 2;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
 }
 
-/* Text Box Styling */
-.text_box1, .text_box2, .text_box3, .text_box4  {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-  padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #f0f0f0;
-  margin: 0 auto;
+.small {
+    aspect-ratio: 1/1;
 }
+
+.text_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 
 /* Image Squares (background image) */
 .square {
@@ -180,6 +182,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
