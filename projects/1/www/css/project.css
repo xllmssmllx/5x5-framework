@@ -90,6 +90,14 @@ hr {
   background-color: #e0e0e0;
 }
 
+/* Large spans two columns */
+.small {
+  /* Small image squares */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e0e0e0;
+}
 /* Text Box Styling */
 .text_box1, .text_box2, .text_box3, .text_box4  {
   font-family: 'Montserrat', sans-serif;
@@ -180,3 +188,4 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
