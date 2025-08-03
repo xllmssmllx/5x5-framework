@@ -92,11 +92,10 @@ hr {
 
 /* Small spans one columns */
 .small {
-  /* Small image squares */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #e0e0e0;
+  grid-column: span 1;
+  width: 1;
+  height: 1;
+  background-color: #e0e0e0;
 }
 /* Text Box Styling */
 .text_box1, .text_box2, .text_box3, .text_box4  {
@@ -188,5 +187,6 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
