@@ -90,12 +90,11 @@ hr {
   background-color: #e0e0e0;
 }
 
-/* Small spans one columns */
+/* Small squares (take up one column) */
 .small {
-  grid-column: span 1;
-  width: 1;
-  height: 1;
-  background-color: #e0e0e0;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    background-color: #e0e0e0;
 }
 /* Text Box Styling */
 .text_box1, .text_box2, .text_box3, .text_box4  {
@@ -187,6 +186,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
