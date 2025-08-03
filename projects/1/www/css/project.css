@@ -75,7 +75,7 @@ hr {
 }
 
 /* ===== Grid Items (Text + Image Squares) ===== */
-.small, .large, .text_box1, .text_box2 {
+.small, .large, .text_box1, .text_box2, .text_box3, .text_box4 {
   width: var(--tile-size);
   height: var(--tile-size);
   background-color: #e0e0e0;
@@ -85,10 +85,13 @@ hr {
 /* Large spans two columns */
 .large {
   grid-column: span 2;
+  width: calc(2 * var(--tile-size) + var(--tile-gap));
+  height: var(--tile-size);
+  background-color: #e0e0e0;
 }
 
 /* Text Box Styling */
-.text_box1, .text_box2 {
+.text_box1, .text_box2, .text_box3, .text_box4  {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.4;
@@ -177,6 +180,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
