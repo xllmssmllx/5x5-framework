@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!--   -->
+<head>
+    <title>5x5 | Platform</title>
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="icon" href="images/5x5-ico.png">
+    <meta charset=utf-8 />
+    <meta name="description" content="Architectural investigations"> 
+    <meta name="author" content="5x5 Platform">
+    <meta name="copyright" content="Copyright (c) 2025 5x5 Platfom. All Rights Reserved">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+
+</head>
+
+<body>
+    <p id="site-title"><a href="index.html">5X5</a></p>
+    <nav>
+         <ul>
+            <li id="navl"><a href="about/about.html">About</a></li>
+            <li id="navr"><a href="contact/contacts.html">Contact</a></li>
+        </ul> 
+        <hr>
+    </nav>
+    
+<main id="project-grid">
+      <div class="large square img_1"></div>
+
+      <div class="small square text_box1">Text or img_4</div>
+      <div class="small square text_box2">Text or img_5</div>
+
+      <div class="large square img_2"></div>
+
+      <div class="small square text_box3">Text or img_6</div>
+      <div class="small square text_box4">Text or iImg_7</div>
+
+      <div class="large square img_3"></div>
+</main>
+
+    
+<!-- END of layout - Footer  -->
+
+<div id="bottom">
+    <p> <span id="copyr">&copy;2025 5x5</span>
+    </p>  
+</div>
+
+</body>
+</html>
