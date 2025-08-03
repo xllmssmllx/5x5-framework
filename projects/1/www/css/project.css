@@ -75,7 +75,7 @@ hr {
 }
 
 /* ===== Grid Items (Text + Image Squares) ===== */
-.small, .large, .text_box1, .text_box2, {
+.small, .large, .text_box1, .text_box2, .text_box3, .text_box4, {
   width: var(--tile-size);
   height: var(--tile-size);
   background-color: #e0e0e0;
@@ -180,6 +180,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
