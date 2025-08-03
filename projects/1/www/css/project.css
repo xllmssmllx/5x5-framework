@@ -66,63 +66,85 @@ hr {
 
 /* ===== Grid Container ===== */
 #project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--tile-gap);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, var(--tile-size));
+  gap: var(--tile-gap);
+  max-width: var(--grid-width);
+  margin: 0 auto; /* center the grid */
+  justify-content: center; /* center content */
 }
 
-/* Base square styles */
+/* ===== Grid Items (Text + Image Squares) ===== */
+.small, .large, .text_box1, .text_box2, .text_box3, .text_box4 {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  background-color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+/* Large spans two columns */
+.large {
+  grid-column: span 2;
+  width: calc(2 * var(--tile-size) + var(--tile-gap));
+  height: calc(2 * var(--tile-size) + var(--tile-gap));
+  background-color: #e0e0e0;
+}
+
+/* Text Box Styling */
+.text_box1, .text_box2, .text_box3, .text_box4  {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0 auto;
+}
+
+/* Image Squares (background image) */
 .square {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-.large {
-    grid-column: span 2;
-    height: var(--tile-size);
-    min-height: var(--tile-size);
-}
-
-.small {
-    height: calc(var(--tile-size) / 2);
-    min-height: calc(var(--tile-size) / 2);
-}
-
-.text_box {
-    height: calc(var(--tile-size) / 2);
-    min-height: calc(var(--tile-size) / 2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    box-sizing: border-box;
-    background: rgba(255,255,255,0.8);
-}
-
-.text-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-/* Image Squares (background image) */
 .square:hover {
   opacity: 0.85;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
+/* Background image classes */
+.img_1 {
+  background-image: url(../images/p1-1.jpg);
+}
+
+.img_2 {
+  background-image: url(../images/p1-2.jpg);
+}
+
+.img_3 {
+  background-image: url(../images/p1-3.jpg);
+}
+
+.img_4 {
+  background-image: url(../images/p1-4.jpg);
+}
+
+.img_5 {
+  background-image: url(../images/p1-5.jpg);
+}
+
+.img_6 {
+  background-image: url(../images/p1-6.jpg);
+}
+
+.img_7 {
+  background-image: url(../images/p1-7.jpg);
+}
 /* ===== Footer ===== */
 #copyr {
   font-family: serif;
@@ -137,9 +159,13 @@ hr {
     max-width: 100%;
   }
 
-  .large, .small, .text_box {
+  .small, .large, .text_box1, .text_box2 {
     width: 90vw;
     height: 90vw;
+  }
+
+  .large {
+    grid-column: span 1;
   }
 
   #site-title a {
