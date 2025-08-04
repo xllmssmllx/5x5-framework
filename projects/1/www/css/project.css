@@ -13,7 +13,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #202020;
+  color: #404040;
   text-align: center;
   min-width: 290px;
   background: white;
@@ -46,7 +46,7 @@ li {
 
 li a {
   display: inline-block;
-  color: #202020;
+  color: #404040;
   text-align: center;
   text-decoration: none;
   padding: 0 10px;
@@ -186,6 +186,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
