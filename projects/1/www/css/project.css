@@ -46,7 +46,7 @@ li {
 
 li a {
   display: inline-block;
-  color: darkgray;
+  color: #202020;
   text-align: center;
   text-decoration: none;
   padding: 0 10px;
@@ -186,6 +186,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
