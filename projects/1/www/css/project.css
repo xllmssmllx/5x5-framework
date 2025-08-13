@@ -125,32 +125,25 @@ hr {
 
 /* Background image classes */
 .img_1 {
-  background-image: url(../images/p1-1.jpg);
+  background-image: url(../images/1.jpg);
 }
 
 .img_2 {
-  background-image: url(../images/p1-2.jpg);
+  background-image: url(../images/2.jpg);
 }
 
 .img_3 {
-  background-image: url(../images/p1-3.jpg);
+  background-image: url(../images/3.jpg);
 }
 
 .img_4 {
-  background-image: url(../images/p1-4.jpg);
+  background-image: url(../images/4.jpg);
 }
 
 .img_5 {
-  background-image: url(../images/p1-5.jpg);
+  background-image: url(../images/5.jpg);
 }
 
-.img_6 {
-  background-image: url(../images/p1-6.jpg);
-}
-
-.img_7 {
-  background-image: url(../images/p1-7.jpg);
-}
 /* ===== Footer ===== */
 #copyr {
   font-family: serif;
@@ -186,6 +179,7 @@ hr {
     scroll-behavior: smooth;
   }
 }
+
 
 
 
